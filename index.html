@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Vinicius Menarim</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+
+        .header .info {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .header .contact {
+            flex: 1;
+        }
+
+        .header .profile-info {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .header p {
+            margin: 5px 0;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .left-column, .right-column {
+            width: 48%;
+            padding: 10px;
+        }
+
+        .main-content::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 2px;
+            background-color: #eaeaea;
+            transform: translateX(-50%);
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        .content ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        .content li {
+            margin: 5px 0;
+        }
+
+        .skills {
+            margin-top: 10px;
+        }
+
+        .skills-content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .skills ul {
+            padding: 0;
+            list-style: none;
+            margin: 0;
+        }
+
+        .employment ul {
+            padding-left: 20px;
+        }
+
+        .employment li {
+            margin-bottom: 10px;
+        }
+
+        .employment .job-title {
+            font-weight: bold;
+        }
+
+        .employment .job-period {
+            font-style: italic;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <img src="Imagem.jpg" alt="Vinicius Menarim">
+        <div class="info">
+            <div class="contact">
+                <h1>Vinicius Menarim</h1>
+                <p>Estudante de Engenharia de Software</p>
+            </div>
+            <div class="profile-info">
+                <p>Rua Exemplo, 123, Cidade</p>
+                <p>viniciusmenarim@email.com</p>
+                <p>(99) 99999-9999</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="left-column">
+            <div class="profile content">
+                <h2>Perfil</h2>
+                <p>Cursando Engenharia de Software, segundo ano, terceiro trimestre. Apaixonado por tecnologia e desenvolvimento de software, com foco em aprimorar habilidades técnicas e contribuir para projetos inovadores.</p>
+            </div>
+
+            <div class="education content">
+                <h2>Educação</h2>
+                <ul>
+                    <li>
+                        <strong>UniFil</strong> <br>
+                        Engenharia de Software (2023 - Atual)
+                    </li>
+                </ul>
+            </div>
+
+            <div class="skills content">
+                <h2>Habilidades Chave</h2>
+                <div class="skills-content">
+                    <div class="professional-skills">
+                        <ul>
+                            <li><strong>Profissionais</strong></li>
+                            <li>Java</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>PHP</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                    <div class="personal-skills">
+                        <ul>
+                            <li><strong>Pessoais</strong></li>
+                            <li>Criatividade</li>
+                            <li>Atenção aos detalhes</li>
+                            <li>Vontade de aprender</li>
+                            <li>Manejo de tempo</li>
+                            <li>Inglês intermediário</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="employment content">
+                <ul>
+                    <h2>Experiência Profissional</h2>
+                    <li>
+                        <strong>Barbearia</strong> <br>
+                        Recepcionista (2023 - Atual)
+                        <p>Desenvolvi habilidades como comunicação com o público, trabalho em equipe e manejo de tempo. Proporcionava um ambiente acolhedor para clientes, gerenciava chamadas telefônicas e organizava agendas.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
